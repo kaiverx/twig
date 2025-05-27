@@ -65,4 +65,36 @@
     </div>
 
 </div>
+{# views/main.twig #}
+
+{% import 'macros.twig' as ui %}
+
+
+<h1 class="text-center">{{ title }}</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+
+    {% include '_list_item.twig' with {
+        title: 'Обучение джедаев',
+        description: 'Познай силу и мудрость джедаев',
+        button_text: 'Начать',
+        button_url: '/jedi',
+        button_active: true,
+        button_type: 'primary'
+    } %}
+
+    {% include '_list_item.twig' with {
+        title: 'Сила ситхов',
+        description: 'Используй тёмную сторону силы',
+        button_text: 'Присоединиться',
+        button_url: '/sith',
+        button_active: true,
+        button_type: 'danger'
+    } %}
+
+    {# Можешь добавлять больше блоков по аналогии #}
+
+</div>
 {% endblock %}
+
+

@@ -1,0 +1,7 @@
+{# macros.twig #}
+{% macro btn(text, url, active, type) %}
+    {% set btn_class = active
+        ? 'btn btn-' ~ (type is defined ? type : 'primary')
+        : 'btn btn-link' %}
+    <a href="{{ url }}" class="{{ btn_class }}">{{ text }}</a>
+{% endmacro %}
