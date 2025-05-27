@@ -8,9 +8,9 @@ define('ROOT', dirname(__DIR__));
 require_once ROOT . '../vendor/autoload.php';
 
 // Подключаем контроллеры
-require_once __DIR__ . '/controllers/MainController.php';
-require_once __DIR__ . '/../controllers/JediController.php';
-require_once ROOT . '/controllers/SithController.php';
+require_once ROOT . '/controllers/MainController.php';
+require_once ROOT . '/controllers/JediController.php';
+require_once ROOT. '/controllers/SithController.php';
 require_once ROOT . '/controllers/CharacterController.php';
 require_once ROOT . '/controllers/ErrorController.php';
 
